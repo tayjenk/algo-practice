@@ -37,4 +37,23 @@ twoSum(nums, target)
 
 // Space complexity : O(1)
 
-//return intOne + intTwo === target && [i, k]
+//Two-Pass Hash Table:
+const twoSumTwoHash = (nums, target) => {
+  //create new Map object
+  let Hash = new Map()
+  //for each el in nums, use .set method to create key/value pairs
+  //key = el, value = indx
+  nums.forEach((int, index) => Hash.set(int, index))
+  console.log(Hash)
+  //loop over nums array
+  for (let i=0; i < nums.length; i++) {
+    //for each el in nums array find complement: target - nums[i]
+    let complement = target - nums[i]
+    //using Map.has(input) --> does Map object have key === input
+    //Map.get(input) --> return value of Map[input]
+    // if hash has key === complement and the value of key doesn't === current idx(prevents repeats of current number) return [i, indx]
+  if (Hash.has(complement) && Hash.get(complement) !== i) {
+    return [i, Hash.get(complement)]
+  }
+  }
+}
