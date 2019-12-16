@@ -57,3 +57,25 @@ const twoSumTwoHash = (nums, target) => {
   }
   }
 }
+
+//One-Pass Hash Table --> while creating table check to see if current element's complement is in the table, if exists return solution immediately
+const twoSumOneHash = (nums, target) => {
+  //create new Map obj
+  let Hash = new Map()
+  //loop through numsArray
+  for(let i = 0; i < nums.length; i++) {
+    console.log('i:', i)
+    //find complement
+    let complement = target - nums[i]
+    console.log(complement)
+    console.log(Hash)
+    //if current Hash has key === complement, value w/ current i
+    if (Hash.has(complement)) {
+       return [Hash.get(complement), i]
+    }
+    // add new key/value and increase i
+    Hash.set(nums[i], i)
+    console.log(Hash)
+  }
+} //tricky solution as Map object cannot have duplicate keys, increases i before setting into Map
+
