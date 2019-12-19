@@ -6,5 +6,5 @@ This repository is comprised of algorithm problems and practice solutions, broke
 ## Current Problems
 - Reverse Integer
 - Two Sum
-- 2019 Advent of Code
-Day 1 / The Tyranny of the Rocket Equation
+> 2019 Advent of Code
+- Day 1 / The Tyranny of the Rocket Equation
