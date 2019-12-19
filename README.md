@@ -7,4 +7,4 @@ This repository is comprised of algorithm problems and practice solutions, broke
 - Reverse Integer
 - Two Sum
 - 2019 Advent of Code
-  -- Day 1 / The Tyranny of the Rocket Equation
+	Day 1 / The Tyranny of the Rocket Equation
