@@ -19,6 +19,7 @@
 // calculate indivual fuel requirement
 // running total of all fuel requirements added together
 
+//CODE...
 let masses = [
   127117,
   121199,
