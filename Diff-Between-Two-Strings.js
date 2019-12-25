@@ -46,5 +46,62 @@ function diffBetweenTwoStrings(source, target) {
 	@return: string[]
 	*/
 
-	// your code goes here
+  // your code goes here
+  source = [...source]
+  console.log('SOURCEARR', source, source.length)
+  console.log('TARGET', target, "LENGTH", target.length)
+  let loop = 0
+  let i = 0
+  let j = 0
+  while (j < target.length && i <= source.length) {
+    console.log("loop:", loop++ )
+    console.log('sourcePointer', source[i], i)
+    console.log('targetPointer', target[j], j)
+    //console.log('source length', source.length)
+    if (source[i] === target[j]) {
+      i++
+      j++
+    }
+    else {
+      // if current target value !== current source value, target's pointer does not move in order to continue comparisons with source, while source pointer moves in every loop
+      // if target is longer than source or has not caught up to source pointer, current target value will compare with "undefined" inside sourceArray and will hit else statement, increasing the size of sourceArray with "-undefined" and will go into infinite loop
+      // if target has values source does not have, thus comparing those values with "undefined", if statement will add target's value into sourceArr and increase pointer until it reaches the end of it's length
+      if (target.substring(j).includes(source[i]) ||
+        source[i] === undefined) {
+        source.splice(i, 0, `+${target[j]}`)
+        i++
+        j++
+      } else {
+        source[i] = `-${source[i]}`
+        i++
+      }
+    }
+  }
+
+  return source
 }
+
+//1
+diffBetweenTwoStrings("ABCDEFG", "ABDFFGH")
+//["A","B","-C","D","-E","F","+F","G","+H"]
+//2
+diffBetweenTwoStrings("CCBC", "CCBC")
+//["C","C","B","C"]
+//3
+diffBetweenTwoStrings("CBBC", "CABAABBC")
+//["C","+A","B","+A","+A","B","+B","C"]
+//4
+diffBetweenTwoStrings("CABAAABBC", "CBBC")
+//["C","-A","B","-A","-A","-A","B","-B","C"]
+//5
+diffBetweenTwoStrings("AABACC", "BABCAC")
+//["-A","-A","B","A","+B","C","+A","C"]
+//6
+diffBetweenTwoStrings("HMXPHHUM", "HLZPLUPH")
+//["H","-M","-X","+L","+Z","P","-H","-H","+L","U","-M","+P","+H"]
+//7
+diffBetweenTwoStrings("GHMXGHUGXL", "PPGGXHHULL")
+//["+P","+P","G","-H","-M","-X","G","+X","H","+H","U","-G","-X","L","+L"]
+//8
+diffBetweenTwoStrings("GMMGZGGLUGUH", "HPGPPMGLLUUU")
+//["+H","+P","G","-M","+P","+P","M","G","-Z","-G","-G","L","+L","U","-G","U","-H","+U"]
