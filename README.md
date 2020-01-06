@@ -8,5 +8,6 @@ This repository comprises algorithm problems and practice solutions, broken down
 - Palindrome Number
 - Reverse Integer
 - Two Sum
+- Roman to Integer
 > 2019 Advent of Code
 - Day 1 / The Tyranny of the Rocket Equation

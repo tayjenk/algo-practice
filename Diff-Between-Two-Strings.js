@@ -84,24 +84,31 @@ function diffBetweenTwoStrings(source, target) {
 //1
 diffBetweenTwoStrings("ABCDEFG", "ABDFFGH")
 //["A","B","-C","D","-E","F","+F","G","+H"]
+
 //2
 diffBetweenTwoStrings("CCBC", "CCBC")
 //["C","C","B","C"]
+
 //3
 diffBetweenTwoStrings("CBBC", "CABAABBC")
 //["C","+A","B","+A","+A","B","+B","C"]
+
 //4
 diffBetweenTwoStrings("CABAAABBC", "CBBC")
 //["C","-A","B","-A","-A","-A","B","-B","C"]
+
 //5
 diffBetweenTwoStrings("AABACC", "BABCAC")
 //["-A","-A","B","A","+B","C","+A","C"]
+
 //6
 diffBetweenTwoStrings("HMXPHHUM", "HLZPLUPH")
 //["H","-M","-X","+L","+Z","P","-H","-H","+L","U","-M","+P","+H"]
+
 //7
 diffBetweenTwoStrings("GHMXGHUGXL", "PPGGXHHULL")
 //["+P","+P","G","-H","-M","-X","G","+X","H","+H","U","-G","-X","L","+L"]
+
 //8
 diffBetweenTwoStrings("GMMGZGGLUGUH", "HPGPPMGLLUUU")
 //["+H","+P","G","-M","+P","+P","M","G","-Z","-G","-G","L","+L","U","-G","U","-H","+U"]
