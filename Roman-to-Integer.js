@@ -19,11 +19,19 @@
 //APPROACH...
 // create Map object setting roman numeral symbols and values as key/value pairs
 //[['I', 1], ['V', 5]...etc]
-// set up initial counter to 0
+// set up initial counter to the value of first numeral in string
 //*roman numerals written from largest to smallest*
-// start and end of string and loop through, finding value for each numeral and add to counter
+// loop through string, finding value for each numeral
 // next numeral should always be larger than its previous numeral
-// if current numeral's value is smaller than the previous, subtract it from the counter
+// if current value is less than or equal to the previous value, add value to counter
+// if current numeral's value is greater than the previous, subtract it from the counter and add to counter the difference btw the current and prev value
+// ex: MCM --> M = 1000 C = 100 M = 1000
+//counter = 1000
+//curr = 100 prev = 1000 (curr is less than prev)
+//counter = 1100
+//curr = 1000 prev = 100 (curr is greater than prev)
+//counter = (counter - prev) + (curr - prev) ---> counter - prev*2 + curr
+//##remove prev value and add difference btw curr and prev value
 // return final counter
 
 //CODE...
