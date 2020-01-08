@@ -1,9 +1,12 @@
 # Algo-Practice
 
 ## Background
-This repository comprises algorithm problems and practice solutions, broken down into my own language in order to create a deeper understanding of algorithmic structure and problem-solving.
+This repository comprises algorithm challenges and practice solutions, broken down into my own language in order to create a deeper understanding of algorithmic structure and problem-solving.
 
-## Current Problems
+All coding solutions are written in JavaScript.
+
+## Challenges
+
 - Diff Between Two Strings
 - Palindrome Number
 - Reverse Integer
