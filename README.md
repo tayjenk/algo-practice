@@ -14,3 +14,6 @@ All coding solutions are written in JavaScript.
 - Roman to Integer
 > 2019 Advent of Code
 - Day 1 / The Tyranny of the Rocket Equation
+
+## Fundamentals
+* [Big O Notation] (./Fundamentals/BigO.md)
