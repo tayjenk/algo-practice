@@ -47,7 +47,7 @@ Time Complexity = O(n^2)
 --> drop lower order terms = n^2
 ```
 
-#### Adding vs. Multiplying vs. Halving Runtimes:
+### Adding vs. Multiplying vs. Halving Runtimes:
 
 ##### Add Runtimes: O(A+B)
 "When A work is done first, then do work B"
@@ -57,11 +57,27 @@ example: two separate for loops
 "When B work is done for each element of A"
 example: nested for loop
 
-#### O(log n) Runtime:
+Ranked worst to best:
+O(n!) > O(2^n) > O(n^2)<--quadratic time > O(n log n) > O(n)<--linear time > O(log n)<--logarithmic time > O(1)<--constant time
+
+### Amortized Time:
+Time complexity when an algorithm has a very bad time complexity only once in a while besides the time complexity that happens most of time.
+Example: An ArrayList, a data structure in Java that contains an array that gets doubles in size when it hits original capacity.
+In ArrayList, two time complexities exist: O(1) for insertion and O(n) to copy old to new bigger array.
+Amortized time looks at an algorithm from the viewpoint of total running time rather than individual operations. We don’t care how long one insert takes, but rather the average time of all the calls to insert.
+
+### O(log n) Runtime:
 If number of elements in a problem is halved each time
+Example: binary search
+
+### Recursive Runtime:
+Simple recursive call: O(n) time, O(n) space
+When recursive function makes multiple calls, it's O(branches^depth)
+Example: Recursive Fibonacci sequence with 2 branches: O(2^n)
 
 ## Space Complexity
 How much additional memory is needed to run the code.
+NEW variables
 > Auxiliary Space Complexity --> space required by the algo, not including space taken by the inputs/the algo itself
 ```
 Shorthands:
