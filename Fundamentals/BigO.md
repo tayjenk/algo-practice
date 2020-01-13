@@ -123,8 +123,13 @@ SHIFT & UNSHIFT
 ## Examples:
 Big O Excercises Derived From Cracking the Coding Interview
 
-Ex1:
-2 variable assignments **2**</br> 1 for loop **n**, nested arithmetic **1**, 2nd for loop **n**, nested arithmetic **1**, print statement 1
+Ex1:</br>
+2 variable assignments --> 2</br>
+1 for loop --> n</br>
+ - nested arithmetic --> 1</br>
+2nd for loop --> n</br>
+ - nested arithmetic --> 1</br>
+print statement --> 1</br>
 = 3 + 2n = 0(N)
 
 Ex2:
