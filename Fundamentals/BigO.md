@@ -126,15 +126,60 @@ Big O Excercises Derived From Cracking the Coding Interview
 Ex1:</br>
 2 variable assignments --> 2</br>
 1 for loop --> n</br>
- - nested arithmetic --> 1</br>
+nested arithmetic --> 1</br>
 2nd for loop --> n</br>
- - nested arithmetic --> 1</br>
+nested arithmetic --> 1</br>
 print statement --> 1</br>
-= 3 + 2n = 0(N)
+= 3 + 2n = **0(N)**
 
-Ex2:
-1 for loop **n**, nested for loop **n**, nested print statement **1** --> **O(N^2)**
+Ex2:</br>
+1 for loop --> n</br>
+nested for loop --> n</br>
+nested print statement --> 1</br>
+= n * n * 1 = **O(N^2)**
 
-Ex3:
-1 for loop --> n steps
-    w/ nested for loop (starting at i + 1) --> n-1 steps
+Ex3:</br>
+1 for loop --> n steps</br>
+nested for loop (starting at i + 1) --> n-1 steps</br>
+nested print statement --> 1</br>
+= (n * n-1)/2 * 1 = n^2 - n = **O(N^2)** </br>
+*(need clarification on the "/2")*
+
+Ex4:</br>
+1 for loop of length A --> n</br>
+nested loop of length B --> m</br>
+nested comparison if statement --> 1</br>
+nested print statement --> 1</br>
+= n * m * 1 * 1 = **O(NM)**</br>
+*(not n^2 because their are two different inputs)*
+
+Ex5:</br>
+1 for loop of length A --> n</br>
+nested for loop of length B --> m</br>
+nested for loop of length C (k<100,000, not dependent on input size, constant) --> 1</br>
+nested print statement --> 1</br>
+= n * m * o * 1 = **O(NM)**
+
+Ex6:</br>
+1 for loop of half input length --> n</br>
+nested assignment --> 1</br>
+nested assignment --> 1</br>
+nested assignment --> 1</br>
+nested assignment --> 1</br>
+= log n * 1 = **O(N)**</br>
+*(even if loop only goes through half the array, doesn't impact big O, still goes through indiv. elements)*
+
+Ex7:</br>
+- O(N + P), where P < n/2 = O(N) *N is the dominant term*
+- O(2N) = O(N) *drop the constant*
+- O(N + log N) = O(N) *N dominated log*
+- O(N + M) != O(N) *no established relationship btw N & M, so keep both*
+
+Ex8:</br>
+s = length of longest string</br>
+a = length of array</br>
+fn(array of strings) {</br>
+  sort each string; --> s log s *(each string)* --> a * s log s *(for all strings in array)*</br>
+  sort entire array of sorted strings --> s *(string comparison)* --> a log a *(total comparisons)* --> s * a log a
+} </br>
+= (a * s log s) + (a * s log a) = 2a*s(log s + log a) = **a * s(log s + log a)**
