@@ -124,17 +124,11 @@ SHIFT & UNSHIFT
 Big O Excercises Derived From Cracking the Coding Interview
 
 Ex1:
-2 variable assignments --> 2
-1 for loop w/ nested arithmetic --> 1 * n
-2nd for loop w/ nested arithmetic --> 1 * n
-print statement --> 1
+2 variable assignments **2**\ 1 for loop **n**, nested arithmetic **1**, 2nd for loop **n**, nested arithmetic **1**, print statement 1
 = 3 + 2n = 0(N)
 
 Ex2:
-1 for loop --> n
-    w/ nested for loop --> n
-    w/ nested print statement --> 1
-= O(N^2)
+1 for loop **n**, nested for loop **n**, nested print statement **1** --> **O(N^2)**
 
 Ex3:
 1 for loop --> n steps
