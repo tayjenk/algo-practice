@@ -180,6 +180,11 @@ s = length of longest string</br>
 a = length of array</br>
 fn(array of strings) {</br>
   sort each string; --> s log s *(each string)* --> a * s log s *(for all strings in array)*</br>
-  sort entire array of sorted strings --> s *(string comparison)* --> a log a *(total comparisons)* --> s * a log a
+  sort entire array of sorted strings --> s *(string comparison)* --> a log a *(total comparisons)* --> s * a log a </br>
 } </br>
-= (a * s log s) + (a * s log a) = 2a*s(log s + log a) = **a * s(log s + log a)**
+= (a * s log s) + (a * s log a) = 2a*s(log s + log a) = **O(a * s(log s + log a))**
+
+Ex9:</br>
+if comparsion statement --> 1</br>
+return statement --> 1</br>
+return 1 recursive call + arithmetic + 2nd recursive call --> 2^n</br>
