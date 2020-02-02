@@ -343,3 +343,5 @@ Example: if event ‘B’ is dependent on event ‘A’, ‘A’ comes before �
 Task scheduling - M
 Minimum height of a tree - H
 ```
+
+reference: https://hackernoon.com/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed
