@@ -12,6 +12,8 @@ All coding solutions are written in JavaScript.
 - Reverse Integer
 - Two Sum
 - Roman to Integer
+> Sliding Window Pattern:
+- Maximum Sum Subarray of Size K
 > 2019 Advent of Code
 - Day 1 / The Tyranny of the Rocket Equation
 
