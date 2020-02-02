@@ -16,5 +16,5 @@ All coding solutions are written in JavaScript.
 - Day 1 / The Tyranny of the Rocket Equation
 
 ## Fundamentals
-[Big O Notation](fundamentals/bigO.md)
-* [Hash Tables](fundamentals/hashTables.md)
+* [Big O Notation](Fundamentals/BigO.md)
+* [Hash Tables](Fundamentals/hashTables.md)
