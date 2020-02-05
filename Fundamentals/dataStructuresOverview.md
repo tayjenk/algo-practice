@@ -15,7 +15,9 @@ The processor stores a `cache` where it stores a copy of data read recently from
 
 ## Binary Numbers
 
-Standard number system uses base 10 (decimal), each digit has 10 possible values(1, 2, 3, ... 9, 0) vs. computers use **Base 2** numbers (binary), each digit has 2 possible values (0 & 1)
+Standard number system uses base 10 (decimal), each digit has 10 possible values(1, 2, 3, ... 9, 0)</br>
+vs.</br>
+computers use **Base 2** numbers (binary), each digit has 2 possible values (0 & 1)
 
 ```
 Base 10:
@@ -34,22 +36,24 @@ Base 2:
 2^3 = 16
 etc...
 ```
-**unsigned integers:** unsigned = non-negative, integer = whole number, not fractional or decimal. Signed integers reserve the leftmost bit for the sign `0 = positive, 1 = negative`
+**unsigned integers:** unsigned = non-negative, integer = whole number, not fractional or decimal. Signed integers reserve the leftmost bit for the sign </br>
+`0 = positive, 1 = negative`
 
 ## Fixed Width Integers
 
-1 byte = 8 bits
-2^8 = 256 numerical possibilities with 8 bits / 255 possibilities in an 8 bit unsigned integer
-4 bytes = 32 bits (8 * 4) = 2^4 possibilities
-8 bytes = 64 bits (8 * 8) = 2^8 possibilities
+1 byte = 8 bits</br>
+2^8 = 256 numerical possibilities with 8 bits / 255 possibilities in an 8 bit unsigned integer</br>
+4 bytes = 32 bits (8 * 4) = 2^4 possibilities</br>
+8 bytes = 64 bits (8 * 8) = 2^8 possibilities</br>
+
 **with 'n' bits, 2^n expresses the different numerical possibilities**
-Anything higher than the number of possibilities is an `integer overflow`
 
-Integers are `fixed width or fixed length`, number of bits doesn't change.
-ex: 64 bit integer - 0 or 193,457 will still take up 64 bits.
+Anything higher than the number of possibilities is an `integer overflow`</br>
+Integers are `fixed width or fixed length`, number of bits doesn't change.</br>
+ex: 64 bit integer - 0 or 193,457 will still take up 64 bits.</br>
 
-PROS:
+**PROS:**
 Space Complexity: 0(1) / constant space. Simple operations on fixed witdh integers is 0(1) time (addition, subtraction, division)
 
-TRADEOFF:
+**TRADEOFF:**
 Values are limited to 2^n possibilities
