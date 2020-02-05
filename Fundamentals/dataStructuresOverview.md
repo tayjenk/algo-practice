@@ -58,7 +58,7 @@ Space Complexity: 0(1) / constant space. Simple operations on fixed witdh intege
 **TRADEOFF:**
 Values are limited to 2^n possibilities
 
-## [Hash Tables ](Fundamentals/hashTables.md)
+## [Hash Tables](hashTables.md)
 
 Hash Tables / Hash maps can be thought of as array/table with two columns. Column for `keys` and `values`. Any given number, character, string can be translated into a key / index in the array through a `hashing function`. And the value is stored at that index.
 
@@ -66,4 +66,4 @@ Hash Tables / Hash maps can be thought of as array/table with two columns. Colum
 Time Complexity: 0(1) constant lookup time for values
 
 **CONS:**
-Due to hash collisons, if a hash function is not optimal, lookups can take 0(n) time. Collions are rare enough with a good hash function that the average lookup is 0(1). Looking up a key by value is 0(n) 
+Due to hash collisons, if a hash function is not optimal, lookups can take 0(n) time. Collions are rare enough with a good hash function that the average lookup is 0(1). Looking up a key by value is 0(n)
