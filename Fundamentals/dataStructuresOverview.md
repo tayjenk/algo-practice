@@ -60,7 +60,7 @@ Values are limited to 2^n possibilities
 
 ## [Hash Tables](hashTables.md)
 
-Hash Tables / Hash maps can be thought of as array/table with two columns. Column for `keys` and `values`. Any given number, character, string can be translated into a key / index in the array through a `hashing function`. And the value is stored at that index.
+Hash Tables / Hash maps can be thought of as array-like table with two columns. Column for `keys` and `values`. Any given piece of data (number, character, string) can be translated into a key / index in the array through a `hashing function`. And the value is stored at that index.
 
 **PROS:**
 Time Complexity: 0(1) constant lookup time for values
