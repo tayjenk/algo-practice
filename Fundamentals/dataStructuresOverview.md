@@ -67,3 +67,14 @@ Time Complexity: 0(1) constant lookup time for values
 
 **CONS:**
 Due to hash collisons, if a hash function is not optimal, lookups can take 0(n) time. Collions are rare enough with a good hash function that the average lookup is 0(1). Looking up a key by value is 0(n)
+
+## Arrays
+Elements are stored next to each other at numbered indicies. Each slot in the array corresponds to a slot(s) in RAM.</br>
+Every item in an array must be the same size/same number of bytes.</br>
+Array is uninterrupted(contingous) in memory. No gaps or "skipping over" spots of memory.
+
+**PROS:**
+The memory controller has a direct connection to each slot in RAM so looking up contants of an array is O(1) time. If content stored in an array are of differing sizes, data can be stored wherever in memory and each array element will hold the address in memory / "pointer".
+
+**CONS:**
+Each array item must be the same size and requires a block of uninterupted free memory. Pointer-based arrays require less uninterupted memory and are slower / not cache friendly as the memory controller cannot send sequential / nearby data (0(1) lookup time remains)
