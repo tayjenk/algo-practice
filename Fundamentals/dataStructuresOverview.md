@@ -52,7 +52,7 @@ Anything higher than the number of possibilities is an `integer overflow`</br>
 Integers are `fixed width or fixed length`, number of bits doesn't change.</br>
 ex: 64 bit integer - 0 or 193,457 will still take up 64 bits.</br>
 
-**PROS:**
+**ADVANTAGE:**
 Space Complexity: 0(1) / constant space. Simple operations on fixed witdh integers is 0(1) time (addition, subtraction, division)
 
 **TRADEOFF:**
@@ -62,19 +62,22 @@ Values are limited to 2^n possibilities
 
 Hash Tables / Hash maps can be thought of as array-like table with two columns. Column for `keys` and `values`. Any given piece of data (number, character, string) can be translated into a key / index in the array through a `hashing function`. And the value is stored at that index.
 
-**PROS:**
-Time Complexity: 0(1) constant lookup time for values
+**ADVANTAGE:**
+Time Complexity: `0(1) constant lookup time` for values
 
-**CONS:**
+**TRADEOFF:**
 Due to hash collisons, if a hash function is not optimal, lookups can take 0(n) time. Collions are rare enough with a good hash function that the average lookup is 0(1). Looking up a key by value is 0(n)
 
 ## Arrays
-Elements are stored next to each other at numbered indicies. Each slot in the array corresponds to a slot(s) in RAM.</br>
+Organizes items sequentially in memory at numbered indicies. Each slot in the array corresponds to a slot(s) in RAM.</br>
 Every item in an array must be the same size/same number of bytes.</br>
-Array is uninterrupted(contingous) in memory. No gaps or "skipping over" spots of memory.
+Array is uninterrupted(contingous) in memory. No gaps or "skipping over" spots of memory. `O(n) space`
 
-**PROS:**
-The memory controller has a direct connection to each slot in RAM so looking up contants of an array is O(1) time. If content stored in an array are of differing sizes, data can be stored wherever in memory and each array element will hold the address in memory / "pointer".
+**ADVANTAGE:**
+The memory controller has a direct connection to each slot in RAM, fast lookups array `O(1) time`. </br>
+Fast appends to the end of an array, `O(1) time`. </br>
+If content stored in an array are of differing sizes, data can be stored wherever in memory and each array element will hold the address in memory / "pointer".
 
-**CONS:**
-Each array item must be the same size and requires a block of uninterupted free memory. Pointer-based arrays require less uninterupted memory and are slower / not cache friendly as the memory controller cannot send sequential / nearby data (0(1) lookup time remains)
+**TRADEOFF:**
+Each array item must be the same size,requires a block of uninterupted free memory. Pointer-based arrays require less uninterupted memory and are slower / not cache friendly as the memory controller cannot send sequential / nearby data (0(1) lookup time remains).</br>
+Costly inserts and deletes in the middle or beginning. Other elements must be moved / shifted. O(n) time.
