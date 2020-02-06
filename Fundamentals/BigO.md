@@ -64,7 +64,8 @@ O(n!) > O(2^n) > O(n^2)<--quadratic time > O(n log n) > O(n)<--linear time > O(l
 Time complexity when an algorithm has a very bad time complexity only once in a while besides the time complexity that happens most of time.
 Example: An ArrayList, a data structure in Java that contains an array that gets doubles in size when it hits original capacity.
 In ArrayList, two time complexities exist: O(1) for insertion and O(n) to copy old to new bigger array.
-Amortized time looks at an algorithm from the viewpoint of total running time rather than individual operations. We don’t care how long one insert takes, but rather the average time of all the calls to insert.
+Amortized time looks at an algorithm from the viewpoint of total running time rather than individual operations. We don’t care how long one insert takes, but rather the average time of all the calls to insert. </br>
+Dynamic arrays don't require size to be specified ahead of time but the average or amortized appends can be expensive. 
 
 ### O(log n) Runtime:
 If number of elements in a problem is halved each time
