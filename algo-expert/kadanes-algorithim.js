@@ -46,7 +46,7 @@ function kadanesAlgorithm(array) {
   return maxSum
 }
 
-export default kadanesAlgorithm
+module.exports = kadanesAlgorithm
 
 //TEST...
 // ./tests/kadanes-algorithm.spec.js
