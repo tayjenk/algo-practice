@@ -36,10 +36,11 @@ function kadanesAlgorithm(array) {
   //initialize running max and max sum to the first element in the array
   let runningMax = array[0]
   let maxSum = array[0]
+
   for (let i = 1; i < array.length; i++) {
     let int = array[i]
     //compare the value of the current element to the current element plus the sum of elements behind it
-    runningMax = Math.max(int, (runningMax + int))
+    runningMax = Math.max(int, runningMax + int)
     //compare our current max to the overall max Sum
     maxSum = Math.max(runningMax, maxSum)
   }

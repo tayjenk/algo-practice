@@ -13,7 +13,8 @@
     "mocha": "^7.0.1"
   },
   "scripts": {
-    "test": "mocha ./tests/*.test.js --watch"
+    "test": "mocha ./tests/*.test.js --watch",
+    "test:coverage": "nyc --reporter=html --reporter=text npm test"
   },
   "repository": {
     "type": "git",
