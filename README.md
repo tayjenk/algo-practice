@@ -26,6 +26,7 @@ All coding solutions are written in JavaScript.
 
 ### Running the tests
 `git clone` this repo in your local terminal. </br>
-Run the following commands in your terminal: </br>
-`npm install`
+
+And run the following commands: </br>
+`npm install` </br>
 `npm test`
