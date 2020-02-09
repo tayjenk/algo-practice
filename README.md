@@ -24,4 +24,8 @@ All coding solutions are written in JavaScript.
 * [Big O Notation](Fundamentals/BigO.md)
 * [Hash Tables](Fundamentals/hashTables.md)
 
-### 
+### Running the tests
+`git clone` this repo in your local terminal. </br>
+Run the following commands in your terminal: </br>
+`npm install`
+`npm test`
