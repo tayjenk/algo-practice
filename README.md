@@ -14,6 +14,8 @@ All coding solutions are written in JavaScript.
 - Roman to Integer
 > Sliding Window Pattern:
 - Maximum Sum Subarray of Size K
+> Dynamic Programming
+- Kadane's Algorithm
 > 2019 Advent of Code
 - Day 1 / The Tyranny of the Rocket Equation
 
@@ -21,3 +23,5 @@ All coding solutions are written in JavaScript.
 * [Data Structures Overview](Fundamentals/dataStructuresOverview.md)
 * [Big O Notation](Fundamentals/BigO.md)
 * [Hash Tables](Fundamentals/hashTables.md)
+
+### 

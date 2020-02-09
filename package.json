@@ -8,7 +8,9 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "chai": "^4.2.0"
+    "@types/mocha": "^7.0.1",
+    "chai": "^4.2.0",
+    "mocha": "^7.0.1"
   },
   "scripts": {
     "test": "mocha ./tests/*.test.js --watch"
