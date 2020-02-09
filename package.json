@@ -1,0 +1,27 @@
+{
+  "name": "Algo-Practice",
+  "version": "1.0.0",
+  "description": "## Background This repository comprises algorithm challenges and practice solutions, broken down into my own language in order to create a deeper understanding of algorithmic structure and problem-solving.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.2.0"
+  },
+  "scripts": {
+    "test": "./tests/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tayjenk/Algo-Practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tayjenk/Algo-Practice/issues"
+  },
+  "homepage": "https://github.com/tayjenk/Algo-Practice#readme"
+}

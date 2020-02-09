@@ -46,9 +46,11 @@ function kadanesAlgorithm(array) {
   return maxSum
 }
 
-//TEST...
+export default kadanesAlgorithm
 
+//TEST...
+// ./tests/kadanes-algorithm.spec.js
 
 //Time and Space Complexity:
 //0(N) time - looping through every array element, N is the length of the array
-//0(1) space - constant, using given array 
+//0(1) space - constant, using given array
