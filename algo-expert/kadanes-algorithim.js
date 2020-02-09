@@ -37,6 +37,9 @@ function kadanesAlgorithm(array) {
   let runningMax = array[0]
   let maxSum = array[0]
 
+  //logs error if empty array is passed
+  if(!Array.isArray(array) || !array.length) return undefined
+
   for (let i = 1; i < array.length; i++) {
     let int = array[i]
     //compare the value of the current element to the current element plus the sum of elements behind it
