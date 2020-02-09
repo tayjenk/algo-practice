@@ -3,7 +3,7 @@
 ## Background
 This repository comprises algorithm challenges and practice solutions, broken down into my own language in order to create a deeper understanding of algorithmic structure and problem-solving.
 
-All coding solutions are written in JavaScript.
+All coding solutions are written in JavaScript. Unit testing using Mocha/Chai along with nyc npm package for test coverage. 
 
 ## Challenges
 
