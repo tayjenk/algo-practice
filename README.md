@@ -3,7 +3,7 @@
 ## Background
 This repository comprises algorithm challenges and practice solutions, broken down into my own language in order to create a deeper understanding of algorithmic structure and problem-solving.
 
-All coding solutions are written in JavaScript. Unit testing using Mocha/Chai along with nyc npm package for test coverage. 
+All coding solutions are written in JavaScript. Unit testing using Mocha/Chai along with nyc npm package for test coverage.
 
 ## Challenges
 
@@ -14,6 +14,8 @@ All coding solutions are written in JavaScript. Unit testing using Mocha/Chai al
 - Roman to Integer
 > Sliding Window Pattern:
 - Maximum Sum Subarray of Size K
+> Arrays + Strings
+- Palindrome Check
 > Dynamic Programming
 - Kadane's Algorithm
 > 2019 Advent of Code
