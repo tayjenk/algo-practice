@@ -15,7 +15,8 @@
 
 //CODE...
 function isPalindrome(string) {
-  // Write your code here.
+  //returns error if string is empty
+  if (!string.length) return "string cannot be empty"
   //uses string concatenation
   //O(N) time | O(N) space
   let revString = ""
