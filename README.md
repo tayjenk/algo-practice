@@ -16,6 +16,7 @@ All coding solutions are written in JavaScript. Unit testing using Mocha/Chai al
 - Maximum Sum Subarray of Size K
 > Arrays + Strings
 - Palindrome Check
+- Ceaser Cipher Encryptor
 > Dynamic Programming
 - Kadane's Algorithm
 > 2019 Advent of Code
