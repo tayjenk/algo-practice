@@ -23,9 +23,9 @@ All coding solutions are written in JavaScript. Unit tests created using Mocha/C
 - Day 1 / The Tyranny of the Rocket Equation
 
 ## Fundamentals
-* [Data Structures Overview](fundamentals/dataStructuresOverview.md)
-* [Big O Notation](fundamentals/bigO.md)
-* [Hash Tables](fundamentals/hashTables.md)
+* [Data Structures Overview](Fundamentals/dataStructuresOverview.md)
+* [Big O Notation](Fundamentals/bigO.md)
+* [Hash Tables](Fundamentals/hashTables.md)
 
 ## Running the Tests
 `git clone` this repo in your local terminal. </br>
