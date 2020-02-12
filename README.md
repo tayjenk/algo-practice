@@ -24,7 +24,7 @@ All coding solutions are written in JavaScript. Unit tests created using Mocha/C
 
 ## Fundamentals
 * [Data Structures Overview](Fundamentals/dataStructuresOverview.md)
-* [Big O Notation](Fundamentals/bigO.md)
+* [Big O Notation](Fundamentals/BigO.md)
 * [Hash Tables](Fundamentals/hashTables.md)
 
 ## Running the Tests
