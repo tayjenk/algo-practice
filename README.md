@@ -27,7 +27,7 @@ All coding solutions are written in JavaScript. Unit tests created using Mocha/C
 * [Big O Notation](fundamentals/bigO.md)
 * [Hash Tables](fundamentals/hashTables.md)
 
-## Running the tests
+## Running the Tests
 `git clone` this repo in your local terminal. </br>
 
 And run the following commands: </br>
