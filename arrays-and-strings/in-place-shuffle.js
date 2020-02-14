@@ -40,4 +40,6 @@ function getRandom(floor, ceiling) {
   return Math.floor(Math.random() * (ceiling - floor) + floor)
 }
 
+module.exports = shuffle
+
 //O(N) time | O(1) space
