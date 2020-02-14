@@ -30,6 +30,8 @@ function shuffle(array) {
       let temp = array[floor]
       array[floor] = array[randomIndex]
       array[randomIndex] = temp
+      //after selecting random element, remove it from the indexes to be slected to prevent duplicate draws
+      //each element is equally likely to be selected during each iteration
       floor++
     }
   }
@@ -39,7 +41,8 @@ function shuffle(array) {
 function getRandom(floor, ceiling) {
   return Math.floor(Math.random() * (ceiling - floor) + floor)
 }
-
+//TEST...
+//tests/in-place-shuffle.test.js
 module.exports = shuffle
 
 //O(N) time | O(1) space
