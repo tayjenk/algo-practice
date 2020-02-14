@@ -16,6 +16,7 @@ All coding solutions are written in JavaScript. Unit tests created using Mocha/C
 > Arrays + Strings
 - Palindrome Check
 - Ceaser Cipher Encryptor
+- In-Place Shuffle
 > Dynamic Programming
 - Kadane's Algorithm
 - Diff Between Two Strings
