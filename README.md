@@ -17,6 +17,7 @@ All coding solutions are written in JavaScript. Unit tests created using Mocha/C
 - Palindrome Check
 - Ceaser Cipher Encryptor
 - In-Place Shuffle
+- Is Unique
 > Binary Search Trees
 - Largest Smaller BST Key
 > Dynamic Programming
