@@ -36,3 +36,6 @@ const findLargestSmallerKey = (rootNode, num) => {
   }
   return highestKey
  }
+
+ //O(log n) time complexity - tree is scanned once from top to bottom and does a constant number of actions for each node, tree is also balanced otherwise it could be up to 0(n)
+// O(1) space
