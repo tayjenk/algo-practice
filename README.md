@@ -18,6 +18,7 @@ All coding solutions are written in JavaScript. Unit tests created using Mocha/C
 - Ceaser Cipher Encryptor
 - In-Place Shuffle
 - Is Unique
+- Check Permutation
 > Binary Search Trees
 - Largest Smaller BST Key
 > Dynamic Programming
