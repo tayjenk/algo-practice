@@ -19,6 +19,8 @@ All coding solutions are written in JavaScript. Unit tests created using Mocha/C
 - In-Place Shuffle
 - Is Unique
 - Check Permutation
+> Linked Lists
+- Kth to the Last Node in a Singly Linked List
 > Binary Search Trees
 - Largest Smaller BST Key
 > Dynamic Programming
