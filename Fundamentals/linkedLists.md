@@ -18,6 +18,7 @@ Quick appends and prepends are possible because nodes of a linked list can be st
 
 To find the ith node in memory of linked list requires traversing the list and keeping count until the desired node is found. Lookups take O(i) time, where i is the node trying to find. Linkedlists are also not cache friendly (vs. arrays) because the next node could be stored *anywhere* in memory
 
+```
 function getIthItemInLinkedList(head, i) {
 
     if (i < 0) {
@@ -41,3 +42,4 @@ function getIthItemInLinkedList(head, i) {
 
     throw new Error("List has fewer than i + 1 (" + (i + 1) + ") nodes");
 }
+```
