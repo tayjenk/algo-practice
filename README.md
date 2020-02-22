@@ -26,6 +26,7 @@ All coding solutions are written in JavaScript. Unit tests created using Mocha/C
 > Dynamic Programming
 - Kadane's Algorithm
 - Diff Between Two Strings
+- Levenshtein Distance
 > 2019 Advent of Code
 - Day 1 / The Tyranny of the Rocket Equation
 
