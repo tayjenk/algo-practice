@@ -34,6 +34,7 @@ All coding solutions are written in JavaScript. Unit tests created using Mocha/C
 * [Data Structures Overview](Fundamentals/dataStructuresOverview.md)
 * [Big O Notation](Fundamentals/BigO.md)
 * [Hash Tables](Fundamentals/hashTables.md)
+* [Linked Lists](Fundamentals/linkedLists.md)
 
 ## Running the Tests
 `git clone` this repo in your local terminal. </br>
