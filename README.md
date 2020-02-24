@@ -20,6 +20,7 @@ All coding solutions are written in JavaScript. Unit tests created using Mocha/C
 - Is Unique
 - Check Permutation
 > Linked Lists
+- Delete Node In-Place
 - Kth to the Last Node in a Singly Linked List
 > Binary Search Trees
 - Largest Smaller BST Key
