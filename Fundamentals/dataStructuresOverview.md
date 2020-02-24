@@ -68,6 +68,12 @@ Time Complexity: `0(1) constant lookup time` for values
 **TRADEOFF:**
 Due to hash collisons, if a hash function is not optimal, lookups can take 0(n) time. Collions are rare enough with a good hash function that the average lookup is 0(1). Looking up a key by value is 0(n)
 
+### Big O of Hash Tables
+* space	O(n)
+* insert	O(1)	(worst case: O(N))
+* lookup	O(1)	(worst case: O(N))
+* delete	O(1)	(worst case: O(N))
+
 ## Arrays
 Organizes items sequentially in memory at numbered indicies. Each slot in the array corresponds to a slot(s) in RAM.</br>
 Every item in an array must be the same size/same number of bytes.</br>
@@ -82,6 +88,13 @@ If content stored in an array are of differing sizes, data can be stored whereve
 Each array item must be the same size,requires a block of uninterupted free memory. Pointer-based arrays require less uninterupted memory and are slower / not cache friendly as the memory controller cannot send sequential / nearby data (0(1) lookup time remains).</br>
 Costly inserts and deletes in the middle or beginning. Other elements must be moved / shifted. O(n) time.
 
+### Big O of Arrays
+* space	O(n)
+* lookup	O(1)
+* append	O(1)
+* insert/prepend	O(n)
+* delete	O(n)
+
 ## [Linked Lists](linkedLists.md)
 A linked list organizes items in nodes, with each node storing a pointer to the next. Best uses for `stacks and queues` that only need fast operations on the ends.
 
@@ -93,3 +106,12 @@ Costly lookups, to access or edit a node within a linked list requires walking f
 
 ### Doubly Linked Lists
 In a basic linked lists, nodes contain pointers to only the following node. Doubly linked lists have pointers to the *next* and *previous* nodes. DLL allow traversing a linked list `backwards`.
+
+### Big O of Linked Lists
+* space O(N)
+* prepend O(1)
+* append O(1)
+* lookup O(N)
+* insert O(1) (actual act of insertion, lookup for insertion is O(N))
+* removal O(N)
+

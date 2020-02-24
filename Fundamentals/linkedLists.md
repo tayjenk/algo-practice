@@ -19,7 +19,7 @@ Quick appends and prepends are possible because nodes of a linked list can be st
 To find the ith node in memory of linked list requires traversing the list and keeping count until the desired node is found. Lookups take O(i) time, where i is the node trying to find. Random access is not allowed. Linkedlists are also not cache friendly (vs. arrays) because the next node could be stored *anywhere* in memory
 
 Singly Linked List Structure:
-Methods: `push, pop, shift, unshfit, get, set, insert`
+Methods: `push, pop, shift, unshfit, get, set, insert, remove, reverse`
 ```
 class Node {
   constructor(val) {
@@ -152,6 +152,54 @@ class SinglyLinkedList {
     //increment length
     this.length++
     return true
+  }
+
+  //remove: removes a node from a specific position in a linked list
+  remove(position) {
+    //if position passed is < 0 or > list length, return null
+    if(position < 0 || position >= this.length) return null
+    //if position = length - 1, use pop method to remove from end
+    if(position === this.length - 1) return this.pop()
+    //if position = 0, use shift method to remove head
+    if(position === 0) return this.shift()
+    //otherwise use get method to access node at the node 1 before the node being removed
+    const nodeBefore = this.get(position - 1)
+    //save node to be removed in a varable
+    const removedNode = nodeBefore.next
+    //assign the node before's next property to the next property of the removed node
+    nodeBefore.next = removedNode.next
+    //decrement list length
+    this.length--
+    //return val of removed node
+    return removedNode.val
+  }
+
+  //reverse: reverse order of linked list in place
+  reverse() {
+    //assign head to node variable
+    let node = this.head
+    //swap head and tail values
+    this.head = this.tail
+    this.tail = node
+    //create next and prev variable set prev value to null
+    let next, prev = null
+    // let next = node.next
+    // while(next) {
+    //   node.next = prev
+    //   prev = node
+    //   node = next
+    //   next = node.next
+    // }
+    // this.head.next = prev
+
+    //loop through length of list, shifting pointer variables and reassigning node next property
+    for(let i = 0; i < this.length; i++) {
+      next = node.next
+      node.next = prev
+      prev = node
+      node = next
+    }
+    return this
   }
 }
 
