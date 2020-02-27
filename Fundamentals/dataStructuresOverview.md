@@ -95,7 +95,7 @@ Costly inserts and deletes in the middle or beginning. Other elements must be mo
 * insert/prepend	O(n)
 * delete	O(n)
 
-## [Linked Lists](linkedLists.md)
+## [Linked Lists](singlyLinkedLists.md)
 A linked list organizes items in nodes, with each node storing a pointer to the next. Best uses for `stacks and queues` that only need fast operations on the ends.
 
 **ADVANTAGE:**
@@ -104,7 +104,7 @@ Fast appends and prepends, O(1) time.
 **TRADEOFF:**
 Costly lookups, to access or edit a node within a linked list requires walking from the head to the wanted node, taking O(i) time.
 
-### Doubly Linked Lists
+### [Doubly Linked Lists](doublyLinkedLists.md)
 In a basic linked lists, nodes contain pointers to only the following node. Doubly linked lists have pointers to the *next* and *previous* nodes. DLL allow traversing a linked list `backwards`.
 
 ### Big O of Linked Lists
