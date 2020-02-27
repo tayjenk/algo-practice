@@ -63,6 +63,25 @@ class DoublyLinkedList {
     this.length--
     return removedNode
   }
-
+  //shift: removes a node from the beginning of a linked list
+  shift() {
+    //if list is empty return undefined
+    if(!this.head) return undefined
+    //if the list only has one node, set the head and tail to null
+    if(this.length === 1) {
+      this.head = this.tail = null
+    } else {
+      //otherwise store current head in a variable
+      //set the head to the next property of the current head
+      //set the new head's prev property to null
+      //set the removedHead's next property to null
+      const removedHead = this.head
+      this.head = removedHead.next
+      this.head.prev = null
+      removedHead.next = null
+    }
+    this.length--
+    return removedHead
+  }
 }
 ```
