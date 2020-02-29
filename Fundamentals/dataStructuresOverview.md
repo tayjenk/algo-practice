@@ -104,14 +104,22 @@ Fast appends and prepends, O(1) time.
 **TRADEOFF:**
 Costly lookups, to access or edit a node within a linked list requires walking from the head to the wanted node, taking O(i) time.
 
-### [Doubly Linked Lists](doublyLinkedLists.md)
-In a basic linked lists, nodes contain pointers to only the following node. Doubly linked lists have pointers to the *next* and *previous* nodes. DLL allow traversing a linked list `backwards`.
-
-### Big O of Linked Lists
+### Big O of Singly Linked Lists
 * space O(N)
 * prepend O(1)
 * append O(1)
 * lookup O(N)
 * insert O(1) (actual act of insertion, lookup for insertion is O(N))
+* removal O(N)
+
+### [Doubly Linked Lists](doublyLinkedLists.md)
+In a basic linked lists, nodes contain pointers to only the following node. Doubly linked lists have pointers to the *next* and *previous* nodes. DLL allow traversing a linked list `backwards`.
+
+### Big O of Doubly Linked Lists
+* space O(N)
+* prepend O(1)
+* append O(1)
+* lookup O(N)
+* insert O(1) 
 * removal O(N)
 
