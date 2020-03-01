@@ -66,9 +66,10 @@ function maxSubarraySum(array, k){
       sum -= array[i - k]
       }
     //if curr sum > maxSum reassign maxSum
-    if(sum > maxSum) {
-      maxSum = sum
-      }
+    // if(sum > maxSum) {
+    //   maxSum = sum
+    //   }
+    maxSum = Math.max(sum, maxSum)
     }
   return maxSum
 }
