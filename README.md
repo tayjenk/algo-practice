@@ -22,6 +22,8 @@ All coding solutions are written in JavaScript. Unit tests created using Mocha/C
 > Linked Lists
 - Delete Node In-Place
 - Kth to the Last Node in a Singly Linked List
+> Stacks and Queues
+- Min Max Stack Construction
 > Binary Search Trees
 - Largest Smaller BST Key
 > Dynamic Programming
