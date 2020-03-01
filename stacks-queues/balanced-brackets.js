@@ -57,5 +57,8 @@ function balancedBrackets(string) {
     }
   }
   console.log('final stack', stack)
-  return stack.length ? false : true
+  return stack.length === 0
 }
+
+//O(N) time | O(N) space, where n is the length of the string
+//from AlgoExpert's Balanced Brackets
