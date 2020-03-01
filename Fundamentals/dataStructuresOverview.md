@@ -128,10 +128,12 @@ In a basic linked lists, nodes contain pointers to only the following node. Doub
 * removal O(N)
 
 ## [Stacks and Queues](stacksQueues.md)
-Stacks store data in a last in, first out `LIFO` order. Can be created used an array or singly linked list
-
+Stacks store data in a last in, first out `LIFO` order. Can be created using an array or singly linked list.
 `Stack Methods: push(val), pop, peek, isEmpty`
 
+Queues store data in a first in, first out `FIFO` order. Can be created using an array or singly linked list.
+` Queue Methods: enqueue(add to tail), dequeue(remove from head)`
+
 **ADVANTAGE:**
-Fast operations, all operations take O(1) time
+Fast operations, all adds and removals take O(1) time
 

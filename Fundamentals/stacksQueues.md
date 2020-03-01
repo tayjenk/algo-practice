@@ -75,3 +75,72 @@ class Stack {
 ### Big O of Stacks
 Insertion and Removal O(1)
 *stacks aren't meant for searching or accessing
+
+
+## Queues
+
+`First In, First Out` data structure
+
+example: a line waiting for movie tickets
+
+used in: waiting to join an online game, downloading multiple files, print queue
+
+Array Implementation:
+Overall using an array is ineffiecient as N grows as shifting re-indexes all remaining elements in an array
+```
+let q = []
+q.push("FIRST")
+q.push("SECOND")
+q.push("THIRD")
+q = ["FIRST", "SECOND", "THIRD"]
+q.shift()
+
+.unfshift() + .pop() can be used alternatively
+```
+
+Linked List Implementation:
+Methods: `enqueue(add to tail), dequeue(remove from head)`
+```
+class Node {
+  constructor(val)
+  this.val = val
+  this.next = null
+}
+
+class Queue {
+  constructor() {
+    this.first = null
+    this.last = null
+    this.size = 0
+  }
+
+  enqueue(val) {
+    const newNode = new Node(val)
+    if(!this.first) {
+      this.first = this.last = newNode
+    } else {
+      this.last.next = newNode
+      this.last = newNode
+    }
+    this.size++
+    return this
+    //if there is no pointer for this.last, must loop through singly linked list to find last node
+  }
+
+  dequeue() {
+    if(!this.first) return null
+    const removedNode = this.first
+    if(this.size === 1) {
+      this.last = null
+    } else {
+      this.first = removedNode.next
+    }
+    removedNode.next = null
+    this.size--
+    return removedNode
+  }
+}
+```
+### Big O of Queues
+O(1) for insertion and removal, queues are not useful for accessing or searching
+0(N) using an array method
