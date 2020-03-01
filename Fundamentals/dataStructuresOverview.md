@@ -62,6 +62,8 @@ Values are limited to 2^n possibilities
 
 Hash Tables / Hash maps can be thought of as array-like table with two columns. Column for `keys` and `values`. Any given piece of data (number, character, string) can be translated into a key / index in the array through a `hashing function`. And the value is stored at that index.
 
+`Methods: set, get, keys, values`
+
 **ADVANTAGE:**
 Time Complexity: `0(1) constant lookup time` for values
 
@@ -98,6 +100,8 @@ Costly inserts and deletes in the middle or beginning. Other elements must be mo
 ## [Linked Lists](singlyLinkedLists.md)
 A linked list organizes items in nodes, with each node storing a pointer to the next. Best uses for `stacks and queues` that only need fast operations on the ends.
 
+`Methods: push, pop, shift, unshfit, get, set, insert, remove, reverse`
+
 **ADVANTAGE:**
 Fast appends and prepends, O(1) time.
 
@@ -120,6 +124,6 @@ In a basic linked lists, nodes contain pointers to only the following node. Doub
 * prepend O(1)
 * append O(1)
 * lookup O(N)
-* insert O(1) 
+* insert O(1)
 * removal O(N)
 
