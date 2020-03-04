@@ -13,6 +13,7 @@ All coding solutions are written in JavaScript. Unit tests created using Mocha/C
 - Roman to Integer
 > Sliding Window Pattern:
 - Maximum Sum Subarray of Size K
+- Smallest Subarray with Given Sum
 > Arrays + Strings
 - Palindrome Check
 - Ceaser Cipher Encryptor
