@@ -1,8 +1,3 @@
-/**
- * @param {string} path
- * @return {string}
- */
-
 //initiate a stack
 // split the given absolute path at the slashes and loop though array
 // from MDN String.prototype.split():
@@ -54,7 +49,7 @@ const simplifyPath = function(path) {
   })
   //join the remainder of stack together into new path
   if(!stack.length) return '/'
-  return stack.map(file => '/' + file).join('')
+  return stack.map(file => `/${file}`).join('')
 };
 
 //O(N) time | O(N) space?? --> creating a new array using array.prototype.split and creating stack array
