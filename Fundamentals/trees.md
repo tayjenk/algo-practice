@@ -173,6 +173,36 @@ BST() {
 
 
 Depth-First Search(DFS) - going down to the end of the tree first
+ - PreOrder - for each node, vist the root first, then left nodes, then right nodes
+    10
+   /  \
+  6    15
+ / \     \
+3   8     20
+[10, 6, 3, 8, 15 20]
+
+* init an array to store visited node values
+* start at root
+* write helper function that takes in a node:
+* pushes currNode val to array of values
+* if currNode.left, call function on left node
+* if currNode.right, call function on right node
+* return array of values
+
+```
+DFS PreOrder Structure:
+
+DFSPreOrder() {
+    const values = []
+    const traverse = node => {
+      values.push(node.val)
+     if(node.left) traverse(node.left)
+     if(node.right) traverse(node.right)
+    }
+    traverse(this.root)
+    return values
+  }
+```
+
  - InOrder
- - PreOrder
  - PostOrder
