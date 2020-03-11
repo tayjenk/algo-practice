@@ -137,3 +137,10 @@ Queues store data in a first in, first out `FIFO` order. Can be created using an
 **ADVANTAGE:**
 Fast operations, all adds and removals take O(1) time
 
+## [Trees](trees.md)
+Non-linear data structures that contain root and child nodes
+
+`Binary Trees` can have values of any type but at most two children for every parent node
+`Binary Search Trees` more specific binary trees where every node to the left of a parent is less than its value and every node to the right is greater than. BST must only have data that is comparable to each other
+
+Traverse trees using `BFS` (going across the levels of a tree) or `DFS` (going to down the height of a tree - PreOrder, PostOrder, or InOrder)
