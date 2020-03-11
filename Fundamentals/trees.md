@@ -195,6 +195,7 @@ DFS PreOrder Structure:
 DFSPreOrder() {
     const values = []
     const traverse = node => {
+      //store currNode val in array, recursively traverse the left nodes, then right nodes moving back to the root
       values.push(node.val)
      if(node.left) traverse(node.left)
      if(node.right) traverse(node.right)
@@ -203,6 +204,48 @@ DFSPreOrder() {
     return values
   }
 ```
+ - PostOrder - for any given node all left nodes are traversed first, then all right nodes, and the root node is last
+    10
+   /  \
+  6    15
+ / \     \
+3   8     20
+[3, 8, 6, 20, 15, 10]
 
- - InOrder
- - PostOrder
+```
+DFS PostOrder Structure:
+
+dfsPostOrder() {
+    const values = []
+    const traverse = node => {
+      //traverse all left nodes, then right nodes, ending at root
+     if(node.left) traverse(node.left)
+     if(node.right) traverse(node.right)
+      values.push(node.val)
+    }
+    traverse(this.root)
+    return values
+  }
+```
+ - InOrder - traverse all the left nodes first, then the root, then traverse all right nodes
+    10
+   /  \
+  6    15
+ / \     \
+3   8     20
+[3, 6, 8, 10, 15, 20]
+
+ ```
+ DFS InOrder Structure:
+
+ dfsInOrder() {
+    const values = []
+    const traverse = node => {
+     if(node.left) traverse(node.left)
+      values.push(node.val)
+     if(node.right) traverse(node.right)
+    }
+    traverse(this.root)
+    return values
+  }
+ ```
