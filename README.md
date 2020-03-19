@@ -33,6 +33,8 @@ All coding solutions are written in JavaScript. Unit tests created using Mocha/C
 - Kadane's Algorithm
 - Diff Between Two Strings
 - Levenshtein Distance
+> System Design
+- LRU Cache
 > 2019 Advent of Code
 - Day 1 / The Tyranny of the Rocket Equation
 
