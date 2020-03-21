@@ -144,3 +144,10 @@ Non-linear data structures that contain root and child nodes
 `Binary Search Trees` more specific binary trees where every node to the left of a parent is less than its value and every node to the right is greater than. BST must only have data that is comparable to each other
 
 Traverse trees using `BFS` (going across the levels of a tree) or `DFS` (going to down the height of a tree - PreOrder, PostOrder, or InOrder)
+
+## [Binary Heap](binaryHeaps.md)
+Binary Tree-like data structure useful for sorting or creating priority queues.
+
+Either a `MaxBinaryHeap` where all children are smaller than its parent element or `MinBinaryHeap` where all children are larger than its parent element. Every level of a heap must be filled before adding to a new level of the tree, no implied relationship btw siblings.
+
+Can be easily represented with an array.
