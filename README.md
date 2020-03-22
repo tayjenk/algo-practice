@@ -46,6 +46,7 @@ All coding solutions are written in JavaScript. Unit tests created using Mocha/C
 * [Stacks and Queues](Fundamentals/stacksQueues.md)
 * [Trees](Fundamentals/trees.md)
 * [Binary Heaps](Fundamentals/binaryHeaps.md)
+* [Graphs](Fundamentals/graphs.md)
 
 ## Running the Tests
 `git clone` this repo in your local terminal. </br>
