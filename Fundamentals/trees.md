@@ -117,7 +117,12 @@ Time Complexity - O(N) where N is the number of nodes, traversing a tree hits ev
 
 Space Complexity - depends on tree strutcure. Wider trees can take up more space in the queue, longer trees take up more space in the recursive stack
 
-Use Cases for DFS:
+DFS generally requires less space than BFS. 
+
+`Use Cases for BFS:`
+Will find the `shortest path` btw the starting point and another node
+
+`Use Cases for DFS:`
 DFS InOrder on a BST returns nodes in a trees in size order
 DFS PreOrder useful for cloning a tree, storing a tree in a flat structure(array) and then recreate later - immediately identify the root and left/right nodes
 
