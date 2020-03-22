@@ -71,7 +71,7 @@ class Graph {
 
   removeVertex(vertex) {
     const edges = this.adjacencyList[vertex]
-    edges.forEach(edge => removeEdge(edge))
+    edges.forEach(edge => this.adjacencyList[edge] = this.adjanceyList.filter(e => e !== vertex))
     delete this.adjacencyList[vertex]
   }
 }
