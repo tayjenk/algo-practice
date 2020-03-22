@@ -151,3 +151,16 @@ Binary Tree-like data structure useful for sorting or creating priority queues.
 Either a `MaxBinaryHeap` where all children are smaller than its parent element or `MinBinaryHeap` where all children are larger than its parent element. Every level of a heap must be filled before adding to a new level of the tree, no implied relationship btw siblings.
 
 Can be easily represented with an array.
+
+## [Graphs](graphs.md)
+
+Data structure that organizes items in an interconnected network.
+Each item is a node(`vertex`) connected by `edges`
+
+Can be represented by an `adjacency matrix` (good for identifying the existance of connections/edges quickly, ideal for elemenets with a lot of connections) or `adjacency list` (good for looking up a specific edge btw two vertices, ideal for more elements than connections)
+
+**ADVANTAGE:**
+Representing links. Graphs ideal for working with elements connected to other elements (cities, highways, ethernet cables, social media connections)
+
+**TRADEOFF:**
+Scaling challenges. Most have a 0(n log n) time complexity or slower. Depending on graph size, running across nodes may not be feasible
