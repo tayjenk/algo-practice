@@ -32,6 +32,7 @@ All coding solutions are written in JavaScript. Unit tests created using Mocha/C
 > Dynamic Programming
 - Kadane's Algorithm
 - Diff Between Two Strings
+- Minimum Path Sum
 - Levenshtein Distance
 > System Design
 - LRU Cache
