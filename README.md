@@ -37,6 +37,8 @@ All coding solutions are written in JavaScript. Unit tests created using Mocha/C
 - Levenshtein Distance
 > System Design
 - LRU Cache
+> Bit Manipulation
+- XOR Queries of a Subarray
 > 2019 Advent of Code
 - Day 1 / The Tyranny of the Rocket Equation
 
