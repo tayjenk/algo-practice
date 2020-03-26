@@ -20,6 +20,7 @@ All coding solutions are written in JavaScript. Unit tests created using Mocha/C
 - In-Place Shuffle
 - Is Unique
 - Check Permutation
+- Decrypt String from Alphabet to Integer Mapping
 > Linked Lists
 - Delete Node In-Place
 - Kth to the Last Node in a Singly Linked List
