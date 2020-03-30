@@ -45,8 +45,8 @@ var xorQueries = function(arr, queries) {
           let currentXor = 0
           let range = queries[i]
           let start = range[0], end = range[1]
-          for(let i = start; i <= end; i++) {
-              currentXor = currentXor ^ arr[i]
+          for(let j = start; j <= end; j++) {
+              currentXor = currentXor ^ arr[j]
           }
           result.push(currentXor)
       }
@@ -56,10 +56,10 @@ var xorQueries = function(arr, queries) {
   //range[0] range[1]
   //array[range[0]] xor array[range[1]]
 
-//time complexity: O(n^2)
+//time complexity: O(nm) where n is the length of the input array and m is the length of the queries array | O(1) space
 
 /*
-Optimization:
+Optimization: O(N) time | O(1) space
 store previously computed xor values...somehow..
 arr = [4, 8, 2, 10]
 [2,3] --> 2 ^ 10 = 8
@@ -67,4 +67,12 @@ arr = [4, 8, 2, 10]
 [0, 0] --> 4
 [0, 3] --> 4 ^ (8 ^ 2 ^ 10) --> 4 ^ 0 --> 4
 outout = [8, 0, 4, 4]
+
+create additional array of all possible xor values
+arr = [1, 3, 4, 8] --> [1, 2(3^1), 6(2^4), 14(6^8)]
+*/
+
+/*
+Notes:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators
 */
