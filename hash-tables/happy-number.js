@@ -36,3 +36,11 @@ const isHappy = function(n) {
     })(n)
 };
 
+const isHappy = function(n, seenSumSquares = new Set()) {
+  let total = n.toString().split('').reduce((total, digit) => total += Math.pow(+digit, 2), 0)
+  if(total === 1) return true
+  if(seenSumSquares.has(total)) return false
+  seenSumSquares.add(total)
+  return isHappy(total, seenSumSquares)
+};
+
