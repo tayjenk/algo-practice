@@ -38,6 +38,7 @@ All coding solutions are written in JavaScript. Unit tests created using Mocha/C
 - Diff Between Two Strings
 - Minimum Path Sum
 - Levenshtein Distance
+- Maximum Subarray
 > System Design
 - LRU Cache
 > Bit Manipulation
