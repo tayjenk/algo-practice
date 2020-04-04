@@ -22,6 +22,7 @@ All coding solutions are written in JavaScript. Unit tests created using Mocha/C
 - Check Permutation
 - Decrypt String from Alphabet to Integer Mapping
 - Check If N and Its Double Exist
+- Move Zeros
 > Hash Table
 - Happy Number
 > Linked Lists
