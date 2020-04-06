@@ -26,6 +26,7 @@ All coding solutions are written in JavaScript. Unit tests created using Mocha/C
 - Best Time to Buy and Sell Stock II
 > Hash Table
 - Happy Number
+- Group Anagrams
 > Linked Lists
 - Delete Node In-Place
 - Kth to the Last Node in a Singly Linked List
