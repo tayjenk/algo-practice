@@ -24,6 +24,7 @@ All coding solutions are written in JavaScript. Unit tests created using Mocha/C
 - Check If N and Its Double Exist
 - Move Zeros
 - Best Time to Buy and Sell Stock II
+- Counting Elements
 > Hash Table
 - Happy Number
 - Group Anagrams
