@@ -37,6 +37,7 @@ All coding solutions are written in JavaScript. Unit tests created using Mocha/C
 - Balanced Brackets
 - Simplify Path
 - Backspace String Compare
+- Min Stack
 > Binary Search Trees
 - Largest Smaller BST Key
 > Dynamic Programming
