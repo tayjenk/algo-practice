@@ -15,6 +15,7 @@ All coding solutions are written in JavaScript. Unit tests created using Mocha/C
 - Maximum Sum Subarray of Size K
 - Smallest Subarray with Given Sum
 > Arrays + Strings
+- Two Sum
 - Last Stone Weight
 - Palindrome Check
 - Ceaser Cipher Encryptor
