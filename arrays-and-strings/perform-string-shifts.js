@@ -79,12 +79,8 @@ const moveChars = (str, amount) => {
   //if amount is positive, start from str - amount
   //if amount is negative start at the positive idx of amount
   amount = amount > 0 ? str.length - amount : Math.abs(amount)
-  for(let i = amount; i < str.length; i++) {
-      shiftedString.push(str[i])
-  }
-  for(let i = 0; i < amount; i++) {
-      shiftedString.push(str[i])
-  }
+  for(let i = amount; i < str.length; i++) shiftedString.push(str[i])
+  for(let i = 0; i < amount; i++) shiftedString.push(str[i])
   return shiftedString.join('')
 }
 
