@@ -164,3 +164,31 @@ Representing links. Graphs ideal for working with elements connected to other el
 
 **TRADEOFF:**
 Scaling challenges. Most have a 0(n log n) time complexity or slower. Depending on graph size, running across nodes may not be feasible
+
+## Dynamic Programming
+
+Method of solving a complex problem by breaking it down into smaller, overlapping subproblems.
+Finding th optimal solution to each of those subproblems and storing each solution so as not to repeat subproblems
+ex:
+memoization / top down - factorials, fibonnaci (has limit and could cause stack overflow)
+tabulation / btm up - storing the result of a previous result, reverse fibonnaci, usually dont using iteration, better space complexity (does not take up stack space)
+
+**Time Complexity:** O(N)
+**Space Complexity:** memoization is worse due to size of callstack
+```
+const fib_memo = (n, memo = {}) => {
+  if(memo[n]) return memo[n]
+  if(n <= 2) return 1
+  memo[n] = fib(n-1, memo) + fib(n-2, memo)
+  return memo[n]
+}
+
+const fib_table = n => {
+  if(n <= 2) return 1
+  const fibNums = [0,1,1]
+  for(let i = 3; i <= n; i++) {
+    fibNums[i] = fibNums[i-1] + fibNums[i-2]
+  }
+  return fibNums[n]
+}
+```
