@@ -43,6 +43,7 @@ All coding solutions are written in JavaScript. Unit tests created using Mocha/C
 - Min Stack
 > Binary Search Trees
 - Largest Smaller BST Key
+- Construct Binary Search Tree from Preorder Traversal
 > Dynamic Programming
 - Kadane's Algorithm
 - Diff Between Two Strings
