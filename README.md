@@ -50,6 +50,7 @@ All coding solutions are written in JavaScript. Unit tests created using Mocha/C
 - Minimum Path Sum
 - Levenshtein Distance
 - Maximum Subarray
+- Max Subset Sum No Adjacent
 > System Design
 - LRU Cache
 > Bit Manipulation
