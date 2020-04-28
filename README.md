@@ -58,6 +58,8 @@ All coding solutions are written in JavaScript. Unit tests created using Mocha/C
 - Single Number
 > 2019 Advent of Code
 - Day 1 / The Tyranny of the Rocket Equation
+> Object Oriented Design
+- Parking Lot
 
 ## Fundamentals
 * [Data Structures Overview](Fundamentals/dataStructuresOverview.md)
@@ -68,6 +70,7 @@ All coding solutions are written in JavaScript. Unit tests created using Mocha/C
 * [Trees](Fundamentals/trees.md)
 * [Binary Heaps](Fundamentals/binaryHeaps.md)
 * [Graphs](Fundamentals/graphs.md)
+* [Object Oriented Design](Fundamentals/objectOrientedDesign.md)
 
 ## Running the Tests
 `git clone` this repo in your local terminal. </br>
