@@ -28,6 +28,7 @@ All coding solutions are written in JavaScript. Unit tests created using Mocha/C
 - Move Zeros
 - Best Time to Buy and Sell Stock II
 - Counting Elements
+- Three Number Sum
 > Hash Table
 - Happy Number
 - Group Anagrams
