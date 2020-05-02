@@ -29,6 +29,7 @@ All coding solutions are written in JavaScript. Unit tests created using Mocha/C
 - Best Time to Buy and Sell Stock II
 - Counting Elements
 - Three Number Sum
+- Smallest Difference
 > Hash Table
 - Happy Number
 - Group Anagrams
