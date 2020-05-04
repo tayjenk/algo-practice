@@ -29,7 +29,9 @@
 //reached end of string, check if array has length
 //return false
 
+//EDGE CASES:
 //does string contain other characters?? letters??
+//what happens if there are openers left in the stack at the end of the loop
 
 const COMPLEMENT = {
   '(' : ')',
@@ -38,25 +40,20 @@ const COMPLEMENT = {
 }
 
 function balancedBrackets(string) {
-  let stack = []
-  for(let i = 0; i < string.length; i++) {
-    let bracket = string[i]
-    console.log('bracket', bracket)
-    if(COMPLEMENT.hasOwnProperty(bracket)) {
-      stack.push(bracket)
-      console.log('stack', stack)
-    }
+  const stack = []
+  for(let bracket of string) {
+    if(COMPLEMENT[bracket]) stack.push(bracket)
     else {
-      console.log('last stack', stack[stack.length - 1])
+      //should do a check that this is a closing bracket, should only compare closing brackets to openers, skip other characters that could be in string
       if (stack.length && bracket === COMPLEMENT[stack[stack.length - 1]]) {
         stack.pop()
         console.log('stack after pop', stack)
-      } else {
-        return false
-      }
+      } else return false
     }
   }
   console.log('final stack', stack)
+  //accounts for if there are openers left in stack after loop through string
+  //stack should be empty if balanced
   return stack.length === 0
 }
 
