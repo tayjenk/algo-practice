@@ -14,20 +14,21 @@ All coding solutions are written in JavaScript. Unit tests created using Mocha/C
 > Sliding Window Pattern:
 - Maximum Sum Subarray of Size K
 - Smallest Subarray with Given Sum
-> Arrays + Strings
+> Strings
+- Check Permutation
+- Is Unique
+- Perform String Shifts
+- Palindrome Check
+- Ceaser Cipher Encryptor
+- Decrypt String from Alphabet to Integer Mapping
+> Arrays
 - Check If It Is a Straight Line
 - Spiral Traverse
 - Longest Peak
 - Monotonic Array
-- Perform String Shifts
 - Two Sum
 - Last Stone Weight
-- Palindrome Check
-- Ceaser Cipher Encryptor
 - In-Place Shuffle
-- Is Unique
-- Check Permutation
-- Decrypt String from Alphabet to Integer Mapping
 - Check If N and Its Double Exist
 - Move Zeros
 - Best Time to Buy and Sell Stock II
