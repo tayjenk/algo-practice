@@ -47,6 +47,7 @@ All coding solutions are written in JavaScript. Unit tests created using Mocha/C
 - Backspace String Compare
 - Min Stack
 > Binary Search Trees
+- Validate BST
 - BST Constructor
 - Largest Smaller BST Key
 - Construct Binary Search Tree from Preorder Traversal
