@@ -45,6 +45,7 @@ All coding solutions are written in JavaScript. Unit tests created using Mocha/C
 - Kth to the Last Node in a Singly Linked List
 - Middle of the Linked List
 > Stacks and Queues
+- Remove K Digits
 - Min Max Stack Construction
 - Balanced Brackets
 - Simplify Path
