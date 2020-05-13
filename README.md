@@ -56,6 +56,8 @@ All coding solutions are written in JavaScript. Unit tests created using Mocha/C
 - BST Constructor
 - Largest Smaller BST Key
 - Construct Binary Search Tree from Preorder Traversal
+> Binary Trees
+- Node Depths
 > Dynamic Programming
 - Kadane's Algorithm
 - Diff Between Two Strings
