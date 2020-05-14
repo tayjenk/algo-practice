@@ -13,7 +13,7 @@ tree with no nodes?
 */
 
 //O(N) where n is the number nodes in the binary tree
-//O(h) space where h is the depth of the binary tree
+//O(N) space 
 function invertBinaryTree(tree) {
 	//init nodeQueue with the root
   const nodeQueue = [tree]
