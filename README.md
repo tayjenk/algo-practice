@@ -58,6 +58,7 @@ All coding solutions are written in JavaScript. Unit tests created using Mocha/C
 - Largest Smaller BST Key
 - Construct Binary Search Tree from Preorder Traversal
 > Binary Trees
+- Invert Binary Tree
 - Node Depths
 > Dynamic Programming
 - Kadane's Algorithm
