@@ -52,6 +52,7 @@ All coding solutions are written in JavaScript. Unit tests created using Mocha/C
 - Backspace String Compare
 - Min Stack
 > Binary Search Trees
+- Min Height BST
 - BST Traversal
 - Validate BST
 - BST Constructor
