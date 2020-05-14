@@ -23,6 +23,7 @@ All coding solutions are written in JavaScript. Unit tests created using Mocha/C
 - Ceaser Cipher Encryptor
 - Decrypt String from Alphabet to Integer Mapping
 > Arrays
+- Validate Subsequence
 - Flood Fill
 - Check If It Is a Straight Line
 - Spiral Traverse
