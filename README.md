@@ -42,6 +42,7 @@ All coding solutions are written in JavaScript. Unit tests created using Mocha/C
 - Happy Number
 - Group Anagrams
 > Linked Lists
+- Linked List Construction
 - Delete Node In-Place
 - Kth to the Last Node in a Singly Linked List
 - Middle of the Linked List
