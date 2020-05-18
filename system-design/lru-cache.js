@@ -80,3 +80,124 @@ class LRU {
  //   [2, 2]
 //.   [1, 1]
 //}
+
+//using object and linkedlist approach
+/*
+create a least recently used cache class
+all methods should perform in constand time
+
+cache = {
+  "a" : Value {value: 2, next, prev},
+  "b" : Value {value: 1, next, prev},
+  "c" : Value {value: 3, next, prev}
+ }
+*/
+
+class Value {
+  constructor(key, value) {
+    this.key = key,
+    this.value = value,
+    this.next = null,
+    this.prev = null
+  }
+}
+
+
+class LRUCache {
+  constructor(maxSize) {
+    this.maxSize = maxSize || 1;
+    //cache should have order [most used --> least used]
+    //use linked list for constant access
+    this.currSize = 0
+    this.head = null, //most used
+    this.tail = null, //least recently used
+    this.cache = {} //cache keys point to nodes on linked list
+  }
+
+  //if cache reaches max, least recently used pair is evicted
+  //new pair should replace it
+  //**//insertly pair with a key that exists, should replace the value
+  insertKeyValuePair(key, value) {
+		if(this.currSize === 1 && this.cache[key]) {
+			this.cache[key].value = value
+			return
+		}
+    if(this.cache[key]) {
+      this.removeConnections(this.cache[key])
+      this.currSize--
+    }
+    //if the cache has reached the max size, remove LRU/tail from cache
+    if(this.currSize === this.maxSize) this.removeLRUFromCache()
+    //otherwise create a new value node
+    //store key in cache with value equal to value node
+    const newValue = new Value(key, value)
+    this.cache[key] = newValue
+    //the there is no head, assign head and tail to the newValue
+    if(!this.head) this.head = this.tail = newValue
+    else {
+      //otherwise add newest key to head of nodes
+      this.head.prev = newValue
+      newValue.next = this.head
+      this.head = newValue
+    }
+    //increase currSize
+    this.currSize++
+		console.log(this)
+  }
+
+  //retreving a value from a given key that is nonexistant returns null
+  //if key in cache exists, shift node to the head of linked list
+  //return the value of the head value
+  getValueFromKey(key) {
+    //if key does not exist in cache, return null
+    if(!this.cache[key]) return null
+
+		const getKey = this.cache[key]
+    if(getKey === this.head) return this.head.value
+    
+    //if the key is anything but the head
+    //get the node through the cache, close connections btw the prev and next
+    // shift node to the head of the list
+    else {
+      this.removeConnections(getKey)
+      this.head.prev = getKey
+      getKey.next = this.head
+      getKey.prev = null
+      this.head = getKey
+		}
+    //otherwise the key is the head and do not need to rearrange anything
+    //return the current head's value
+    return this.head.value
+  }
+
+  //gets most recently entered key --> this.head.key
+  //if !this.head does not exist return null
+  getMostRecentKey() {
+    return this.head ? this.head.key : null
+  }
+
+  removeLRUFromCache() {
+    //LRU will always be tail node of cache
+    //delete the key of tail node from the cache
+    //reassign the tail to the prev node and set next property to null
+    //reduce the currSize of cache
+		if(!this.tail) return
+		delete this.cache[this.tail.key]
+		if(this.currSize === 1) {
+			this.tail = this.head = null
+		} else {
+			this.tail = this.tail.prev
+			if(this.tail) this.tail.next = null
+		}
+    this.currSize--
+  }
+
+  removeConnections(node) {
+    if(node.prev) node.prev.next = node.next
+    if(node.next) node.next.prev = node.prev
+		else this.tail = node.prev
+    node.prev = node.next = null
+  }
+}
+
+
