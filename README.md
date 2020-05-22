@@ -39,6 +39,7 @@ All coding solutions are written in JavaScript. Unit tests created using Mocha/C
 - Three Number Sum
 - Smallest Difference
 > Hash Table
+- Sort Characters By Frequency
 - Happy Number
 - Group Anagrams
 > Linked Lists
