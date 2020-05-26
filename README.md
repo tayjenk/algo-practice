@@ -95,6 +95,7 @@ All coding solutions are written in JavaScript. Unit tests created using Mocha/C
 * [Binary Heaps](Fundamentals/binaryHeaps.md)
 * [Graphs](Fundamentals/graphs.md)
 * [Object Oriented Design](Fundamentals/objectOrientedDesign.md)
+* [Problem Solving Patterns](Fundamentals/problemSolvingPatterns.md)
 
 ## Running the Tests
 `git clone` this repo in your local terminal. </br>
