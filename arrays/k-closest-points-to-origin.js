@@ -22,6 +22,9 @@ else return 0
 return slice of points array up to k
 })
 */
+
+//O(N log n) time where n is the length of points
+//O(N) space
 var kClosest = function(points, K) {
   const distance = point => {
       const [x, y] = point
