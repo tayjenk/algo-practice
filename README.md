@@ -46,6 +46,7 @@ All coding solutions are written in JavaScript. Unit tests created using Mocha/C
 - Happy Number
 - Group Anagrams
 > Linked Lists
+- Copy List with Random Pointer
 - Merge Two Sorted Lists
 - Flatten Multilevel Doubly Linked List
 - Reverse Linked List In-place
